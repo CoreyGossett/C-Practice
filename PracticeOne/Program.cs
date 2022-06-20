@@ -220,27 +220,40 @@
 
 //ASK ASH WHY YOU MIGHT USE A LIST HERE INSTEAD OF JUST DOING THE RESULT!
 
-Console.WriteLine("Enter the first number here:");
-int numOne = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Enter the first number here:");
+//int numOne = Convert.ToInt32(Console.ReadLine());
 
-Console.Clear();
+//Console.Clear();
 
-Console.WriteLine("Enter the second number here:");
-int numTwo = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Enter the second number here:");
+//int numTwo = Convert.ToInt32(Console.ReadLine());
 
-Console.Clear();
+//Console.Clear();
 
-int result = numOne + numTwo;
-int triple = (numOne + numTwo) * 3;
+//int result = numOne + numTwo;
+//int triple = (numOne + numTwo) * 3;
 
-if (numOne != numTwo)
+//if (numOne != numTwo)
+//{
+//    Console.WriteLine($"The numbers are not the same. So their sum is {result}");
+//}
+//else
+//{
+//    Console.WriteLine($"The numbers are the same. So triple their sum is {triple}");
+//}
+
+int n = Convert.ToInt32(Console.ReadLine());
+int result = n - 51;
+
+if (n > 51)
 {
-    Console.WriteLine($"The numbers are not the same. So their sum is {result}");
+    Console.WriteLine($"The number you chose was greater than 51. Here is triple the absolute difference: {result * 3}");
 }
 else
 {
-    Console.WriteLine($"The numbers are the same. So triple their sum is {triple}");
+    Console.WriteLine($"The number you chose was less than 51. Here is the absolute differene: {result}");
 }
+
 
 
 
