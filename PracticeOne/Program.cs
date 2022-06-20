@@ -192,23 +192,24 @@
 //Console.WriteLine("Here is the biggest word in the sentence:");
 //Console.WriteLine(word);
 
+// THIS PROBLEM BELOW IS THE ONE TO ASK ASH ABOUT 
 
-string line = "We are going to display this sentence backwards.";
+//string line = "We are going to display this sentence backwards.";
 
-Console.WriteLine("Original Sentence:" + line);
+//Console.WriteLine("Original Sentence:" + line);
 
-string result = "";
+//string result = "";
 
 //List<string> wordsList = new List<string>();
 
-string[] words = line.Split(new[] { " " }, StringSplitOptions.None);
 
-for (int i = words.Length - 1; i >= 0; i--)
-{
-    result = result + words[i] + " ";
-}
+//string[] words = line.Split(new[] { " " }, StringSplitOptions.None);
 
-Console.WriteLine("Reverse String: " + result);
+////Array.Sort(words);
+
+//result = words.OrderByDescending(words, words, 7);
+
+//Console.WriteLine("Reverse String: " + result);
 
 //wordsList.Add(result);
 
@@ -218,3 +219,28 @@ Console.WriteLine("Reverse String: " + result);
 //}
 
 //ASK ASH WHY YOU MIGHT USE A LIST HERE INSTEAD OF JUST DOING THE RESULT!
+
+Console.WriteLine("Enter the first number here:");
+int numOne = Convert.ToInt32(Console.ReadLine());
+
+Console.Clear();
+
+Console.WriteLine("Enter the second number here:");
+int numTwo = Convert.ToInt32(Console.ReadLine());
+
+Console.Clear();
+
+int result = numOne + numTwo;
+int triple = (numOne + numTwo) * 3;
+
+if (numOne != numTwo)
+{
+    Console.WriteLine($"The numbers are not the same. So their sum is {result}");
+}
+else
+{
+    Console.WriteLine($"The numbers are the same. So triple their sum is {triple}");
+}
+
+
+
